@@ -12,5 +12,13 @@ body {
 }
 
 h1 {
-    color: #8873be;
+    color: #000000;
+}
+
+.apple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    height: 800px;
 }
