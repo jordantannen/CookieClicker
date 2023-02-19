@@ -1,6 +1,7 @@
 import { useState } from "react";
 import React from "react";
 import CookieImg from "../img/cookie.png"
+import confetti from 'https://cdn.skypack.dev/canvas-confetti'
 
 export default function Cookie(){
 
@@ -12,6 +13,7 @@ export default function Cookie(){
         let x = 1
 
         if (count >= 10){
+            doubleClick ? null : confetti()
             x = 2
             setDoubleClick(true)
         }
