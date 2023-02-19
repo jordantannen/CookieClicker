@@ -14,6 +14,7 @@ export default function Cookie(){
         <div className="apple">
             <img className="cookie" onClick={increaseCount} src={CookieImg} alt="" width={200} height={200} />
             <h1>{count}</h1>
+            <div>{count > 5 ? (<div>test</div>) : <></>}</div>
         </div>
     )
 }
