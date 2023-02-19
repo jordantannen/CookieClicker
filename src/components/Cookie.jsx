@@ -7,7 +7,7 @@ export default function Cookie(){
     const [count, setCount] = useState(0)
 
     function increaseCount() {
-        setCount(count + 1)
+        setCount(prevCount => prevCount + 1)
     }
 
     return(
