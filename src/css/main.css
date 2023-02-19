@@ -22,3 +22,8 @@ h1 {
     flex-flow: column nowrap;
     height: 800px;
 }
+
+.cookie:active {
+    transform: scale(0.9);
+    transition: transform .2s ease;    
+}

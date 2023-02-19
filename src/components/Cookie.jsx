@@ -12,7 +12,7 @@ export default function Cookie(){
 
     return(
         <div className="apple">
-            <img onClick={increaseCount} src={CookieImg} alt="" width={200} height={200} />
+            <img className="cookie" onClick={increaseCount} src={CookieImg} alt="" width={200} height={200} />
             <h1>{count}</h1>
         </div>
     )
