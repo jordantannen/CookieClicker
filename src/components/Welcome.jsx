@@ -1,4 +1,5 @@
 import Sammy from "../img/sammy.jpeg"
+import "../css/main.css"
 
 export default function Welcome() {
     return (
@@ -6,7 +7,7 @@ export default function Welcome() {
             <div className="wrapper">
                 <h1>Test</h1>
                 <p>Test part two</p>
-                <img src="Sammy" alt="Sammy" width={200} height={200}/>
+                <img src={Sammy} alt="Sammy" width={200} height={200}/>
             </div>
         </>
     )
