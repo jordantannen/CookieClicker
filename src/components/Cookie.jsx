@@ -5,6 +5,7 @@ import CookieImg from "../img/cookie.png"
 export default function Cookie(){
 
     const [count, setCount] = useState(0)
+    const [doubleClick, setDoubleClick] = useState(false)
 
     function increaseCount() {
 
@@ -12,6 +13,7 @@ export default function Cookie(){
 
         if (count >= 10){
             x = 2
+            setDoubleClick(true)
         }
 
         setCount(prevCount => prevCount + x)
@@ -21,7 +23,7 @@ export default function Cookie(){
         <div className="apple">
             <img className="cookie" onClick={increaseCount} src={CookieImg} alt="" width={200} height={200} />
             <h1>{count}</h1>
-            
+            {doubleClick ? <h2>Double Click Activated!</h2> : null}
         </div>
     )
 }
